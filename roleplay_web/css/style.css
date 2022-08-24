@@ -1,0 +1,245 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-c {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-s {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-s-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-c-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.featuresBlock {
+  height: 600px;
+  position: relative;
+  margin: 0px -15px 20px -15px;
+  padding: 0px 15px;
+}
+.featuresBlock h2 {
+  font-size: 42px;
+  margin-bottom: 35px;
+  padding-left: 15px;
+}
+.featuresBlock .flex {
+  flex-wrap: nowrap;
+}
+
+.features {
+  position: relative;
+  z-index: 2;
+  width: 25%;
+  margin: 0px 10px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 390px;
+  padding: 0px 45px 30px 45px;
+  text-align: center;
+  transition: 0.3s;
+  display: flex;
+  align-items: flex-end;
+}
+.features:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+}
+.features:nth-child(1):after {
+  background: linear-gradient(to top, #151515 30%, rgba(15, 12, 14, 0.5) 70%, rgba(15, 12, 14, 0));
+}
+.features:nth-child(2):after {
+  background: linear-gradient(to top, #151515 30%, rgba(11, 15, 20, 0.5) 70%, rgba(11, 15, 20, 0));
+}
+.features:nth-child(3):after {
+  background: linear-gradient(to top, #151515 30%, rgba(15, 18, 20, 0.5) 70%, rgba(15, 18, 20, 0));
+}
+.features:nth-child(4):after {
+  background: linear-gradient(to top, #151515 30%, rgba(13, 17, 12, 0.5) 70%, rgba(13, 17, 12, 0));
+}
+.features-icon {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+.features-title {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+.features-text {
+  height: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.features-button {
+  position: relative;
+  z-index: 1;
+}
+.features:hover {
+  height: 540px;
+  margin-top: -75px;
+  box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.5);
+}
+.features:hover .features-text {
+  max-height: 125px;
+  height: 100%;
+}
+
+section {
+  background-color: #151515;
+  padding: 80px 0px 100px 0px;
+  position: relative;
+  z-index: 9;
+}
+section a {
+  text-decoration: none;
+}
+
+.socBlock {
+  margin-bottom: 40px;
+}
+.socBlock a {
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  margin-right: 16px;
+  opacity: 0.2;
+}
+.socBlock a:hover {
+  opacity: 1;
+}
+.socBlock a.tw {
+  background: url(../images/soc-icons.png) left top no-repeat;
+}
+.socBlock a.vk {
+  background: url(../images/soc-icons.png) left -34px top no-repeat;
+}
+.socBlock a.fb {
+  background: url(../images/soc-icons.png) left -72px top no-repeat;
+}
+.socBlock a.twh {
+  background: url(../images/soc-icons.png) left -108px top no-repeat;
+}
+
+.newsBlock {
+  width: 50%;
+  background: url(../images/news-block-bg.png) center bottom no-repeat;
+  background-color: rgba(14, 14, 14, 0.9);
+  height: 600px;
+  padding: 30px 40px;
+}
+
+.slideNewsBlock {
+  /* border-bottom: 1px solid #444c53; */
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.tab-block {
+  display: none;
+}
+.tab-block.active {
+  display: block;
+  animation: opas 0.5s linear;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.downloadBlock .download-links {
+  position: relative;
+}
+.downloadBlock .download-links a {
+  display: block;
+  margin-left: 35px;
+  color: #868689;
+  padding-left: 25px;
+}
+.downloadBlock .download-links a:hover {
+  filter: brightness(170%);
+}
+.downloadBlock .download-links a.windows {
+  background: url(../images/windows-icon.png) left center no-repeat;
+  position: relative;
+}
+.downloadBlock .download-links a.windows:after {
+  content: "";
+  position: absolute;
+  right: -17px;
+  top: -4px;
+  height: 22px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.downloadBlock .download-links a.mac {
+  background: url(../images/mac-icon.png) left center no-repeat;
+}
+
+.btn{
+  position: relative;
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-family: "montserrat";
+  text-decoration: none;
+  border: 2px solid #6832e3;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-left: 35px;
+  top: 450px;
+  transition: 1s all ease;
+}
+.btn::before{
+  background: #6832e3;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}
+
